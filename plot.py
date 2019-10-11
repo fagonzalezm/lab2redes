@@ -2,8 +2,10 @@ import matplotlib.pyplot as plt
 from scipy.signal import spectrogram
 import numpy as np
 
-#Entrada:   fileNameIn: String que representa el nombre del archivo de audio
+#Entrada:   frequency: Número entero que representa la frecuencia de muestreo
+#           amplitudes: Arreglo de números que representa las amplitudes del audio
 #           fileNameOut: String que representa el nombre del archivo de salida
+#           type: Strig que sirve para poner el titulo del gráfico y el nombre a los ejes x e y
 #Funcionamiento: A partir de los valores de lecetura de audio se grafica la señal de audio y el espectrograma
 #Salida: Se escribe un archivo que contiene el gráfico de la señal de audio y el espectrograma
 def plot(frequency, amplitudes,fileNameOut, type):
